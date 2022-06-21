@@ -1,0 +1,32 @@
+nav
+-home
+-events
+-results
+
+banner
+-club name
+
+spotlight-content
+-heading
+-main message
+-image
+-social
+
+events
+-upcoming events list
+
+results 
+-recent results
+
+member quote
+-quote
+-author
+-images
+
+ending-message
+-heading
+-content
+
+footer
+-clubname
+- social
