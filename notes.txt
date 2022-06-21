@@ -6,11 +6,18 @@ nav
 banner
 -club name
 
-spotlight-content
--heading
--main message
--image
--social
+two columns{
+    spotlight-content
+        -heading
+        -main message
+        -image
+        -social
+
+    member quote
+        -quote
+        -author
+        -images
+}
 
 events
 -upcoming events list
@@ -18,10 +25,7 @@ events
 results 
 -recent results
 
-member quote
--quote
--author
--images
+
 
 ending-message
 -heading
@@ -30,3 +34,8 @@ ending-message
 footer
 -clubname
 - social
+
+
+todo: fix nav (mobile first approach)
+check banner image 
+start 
