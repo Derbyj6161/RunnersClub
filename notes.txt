@@ -36,6 +36,3 @@ footer
 - social
 
 
-todo: fix nav (mobile first approach)
-check banner image 
-start 

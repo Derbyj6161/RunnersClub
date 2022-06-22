@@ -1,7 +1,7 @@
 :root{
     --primary: #AEFF56;
     --secondary: #5C8D34;
-    --tertiary: #0A1B11;
+    --tertiary: #0b120e;
     --black: #020202;
     --white: #F1F1F1;
 }
@@ -15,18 +15,27 @@ body{
     font-family: 'Oopen Sans', sans-serif;
     color: var(--white);
 }
+h1,h2,h3{
+    margin: 0;
+}
 h1{
     font-size: 5rem;
     font-family: 'Outfit';
     font-weight: 700;
 }
 h2{
+    font-size: 3rem;
+    font-family: 'Outfit';
+    font-weight: 600;
+}
+h3{
     font-size: 2.5rem;
     font-family: 'Outfit';
+    font-style: italic;
     font-weight: 400;
 }
 p{
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-family: 'Open Sans';
     font-weight: 400;
 }
@@ -34,7 +43,9 @@ ul{
     margin: 0;
     padding: 0;
 }
-
+.main{
+    padding: 0 5%;
+}
 /*Nav Section*/
 
 nav{
@@ -118,6 +129,9 @@ nav{
     text-align: center;
     padding: 10rem 2rem 4rem;
 }
+.banner h1{
+    margin: 3rem 0rem;
+}
 .banner .cta-button{
     background-color: var(--primary);
     padding: 1rem 2rem;
@@ -131,6 +145,48 @@ nav{
     background-color: var(--secondary);
     color: var(--primary);
 }
+/*main content start*/
+
+/*two columns*/
+.two-columns{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+.spotlight,
+.experiences{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+.spotlight h2 ,
+.experiences h2{
+    margin-bottom: 2rem;
+    border-bottom: 2px solid var(--white);
+    padding-bottom: 1rem;
+}
+.spotlight .img-container,
+.experiences .img-container{
+    margin-bottom: 2rem;
+    width: 100%;
+    max-width: 800px;
+    max-height: 400px;
+    overflow: hidden;
+}
+.spotlight img,
+.experiences img{
+    width: 100%;
+}
+.spotlight h3,
+.experiences h3{
+    margin-bottom: 1rem;
+}
+
+/*Events*/
+
+
 
 
 
@@ -156,3 +212,29 @@ nav{
         display: block;
     }
 }
+@media (min-width: 1000px){
+    .experiences{
+        align-self: flex-end;
+        text-align: right;
+    }
+    .experiences h3,
+    .experiences p{
+        text-align: left;
+    }
+    .spotlight .content,
+    .experiences .content{
+        display: flex;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+    .experiences .content{
+        flex-direction: row-reverse;
+    }
+    .spotlight .text-container{
+        padding-left: 2rem;
+    }
+    .experiences .text-container{
+        padding-right: 2rem;
+    }
+}
+
