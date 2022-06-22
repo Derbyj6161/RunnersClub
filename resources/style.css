@@ -45,6 +45,9 @@ ul{
 }
 .main{
     padding: 0 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 /*Nav Section*/
 
@@ -148,27 +151,31 @@ nav{
 /*main content start*/
 
 /*two columns*/
-.two-columns{
-    margin-top: 2rem;
+.alternating-columns{
+    margin-top: 2rem ;
     display: flex;
     flex-direction: column;
-    align-content: center;
+    align-items: center;
     justify-content: center;
+    max-width: 1800px;
 }
 .spotlight,
-.experiences{
+.experiences,
+.next-steps{
     display: flex;
     flex-direction: column;
     padding: 2rem;
 }
 .spotlight h2 ,
-.experiences h2{
+.experiences h2,
+.next-steps h2{
     margin-bottom: 2rem;
     border-bottom: 2px solid var(--white);
     padding-bottom: 1rem;
 }
 .spotlight .img-container,
-.experiences .img-container{
+.experiences .img-container,
+.next-steps .img-container{
     margin-bottom: 2rem;
     width: 100%;
     max-width: 800px;
@@ -176,11 +183,13 @@ nav{
     overflow: hidden;
 }
 .spotlight img,
-.experiences img{
+.experiences img,
+.next-steps img{
     width: 100%;
 }
 .spotlight h3,
-.experiences h3{
+.experiences h3,
+.next-steps h3{
     margin-bottom: 1rem;
 }
 
@@ -222,7 +231,8 @@ nav{
         text-align: left;
     }
     .spotlight .content,
-    .experiences .content{
+    .experiences .content,
+    .next-steps .content{
         display: flex;
         align-items: center;
         margin-bottom: 2rem;
@@ -230,7 +240,8 @@ nav{
     .experiences .content{
         flex-direction: row-reverse;
     }
-    .spotlight .text-container{
+    .spotlight .text-container,
+    .next-steps .text-container{
         padding-left: 2rem;
     }
     .experiences .text-container{
